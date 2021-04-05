@@ -1,26 +1,28 @@
 {
-  "name": "Quiz-Game-Repo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "parcel source/index.html",
-    "build-prod": "parcel build source/index.html"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MaxAronov/Quiz-Game-Repo.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MaxAronov/Quiz-Game-Repo/issues"
-  },
-  "homepage": "https://github.com/MaxAronov/Quiz-Game-Repo#readme",
-  "devDependencies": {
-    "parcel": "^2.0.0-beta.2",
-    "parcel-bundler": "^1.12.5",
-    "sass": "^1.32.8"
-  }
+    "name": "quiz-game-repo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "dependencies": {
+        "parcel": "^2.0.0-beta.2",
+        "particles.js": "^2.0.0"
+    },
+    "devDependencies": {
+        "@parcel/transformer-sass": "^2.0.0-beta.2",
+        "parcel-bundler": "^1.12.3"
+    },
+    "scripts": {
+        "start": "parcel source/index.html",
+        "build-prod": "parcel build source/index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MaxAronov/Quiz-Game-Repo.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MaxAronov/Quiz-Game-Repo/issues"
+    },
+    "homepage": "https://github.com/MaxAronov/Quiz-Game-Repo#readme"
 }

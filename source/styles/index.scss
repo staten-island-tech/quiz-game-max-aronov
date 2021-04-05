@@ -1,7 +1,7 @@
 @import "_variables.scss";
 @import "_header.scss";
-
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -9,8 +9,14 @@ html, body {
 body {
     background-color: #293e5a;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
 }
