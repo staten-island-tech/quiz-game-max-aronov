@@ -9,8 +9,8 @@
     "version": "1.0.0",
     "main": "index.html",
     "scripts": {
-        "start": "parcel source/index.html",
-        "build-prod": "parcel build source/index.html"
+        "start": "parcel source/pages/index.html",
+        "build-prod": "parcel build source/pages/index.html"
     },
     "repository": {
         "type": "git",
