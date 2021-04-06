@@ -3,9 +3,9 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 2fr, 1fr;
-    margin: auto;
     margin-top: 5vh;
-    width: 100vw;
+    margin-left: 27.75vw;
+    width: auto;
     height: auto;
 }
 
@@ -23,7 +23,7 @@
     font-size: 7.5rem;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
-    text-shadow: 0 0.25rem black;
+    text-shadow: -0.25rem -0.25rem 0 $primary, 0.25rem -0.25rem 0 $primary, -0.25rem 0.25rem 0 $primary, 0.25rem 0.25rem 0 $primary;
 }
 
 #subtitle-text-container {

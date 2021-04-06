@@ -1,0 +1,63 @@
+#navigation {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    grid-gap: 10vh;
+    margin-top: 25%;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    width: 60vw;
+    height: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 15vw;
+    height: 7.5vh;
+    border-radius: 2rem;
+    border-top: 0.25rem outset $tertiary;
+    border-left: 0.25rem outset $tertiary;
+    border-bottom: 0.25rem inset #363e44;
+    border-right: 0.25rem inset #363e44;
+    background: linear-gradient(to right, #29303b 50%, $primary 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    transform: scale(1);
+    animation: button-pulse 2s infinite;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-position: left bottom;
+}
+
+@keyframes button-pulse {
+    0% {
+        transform: scale(0.95);
+    }
+    70% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+.button-text {
+    margin: auto;
+    text-align: center;
+    font-family: $text-font;
+    color: $text-color;
+    font-size: 2rem;
+}
