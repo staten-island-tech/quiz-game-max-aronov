@@ -1,28 +1,27 @@
 {
-    "name": "quiz-game-repo",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.html",
-    "dependencies": {
-        "parcel": "^2.0.0-beta.2",
-        "particles.js": "^2.0.0"
-    },
     "devDependencies": {
-        "@parcel/transformer-sass": "^2.0.0-beta.2",
         "parcel-bundler": "^1.12.3"
     },
+    "dependencies": {
+        "particles.js": "^2.0.0"
+    },
+    "name": "quiz-game-max-aronov",
+    "version": "1.0.0",
+    "main": "index.html",
     "scripts": {
         "start": "parcel source/index.html",
         "build-prod": "parcel build source/index.html"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/MaxAronov/Quiz-Game-Repo.git"
+        "url": "git+https://github.com/staten-island-tech/quiz-game-max-aronov.git"
     },
+    "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/MaxAronov/Quiz-Game-Repo/issues"
+        "url": "https://github.com/staten-island-tech/quiz-game-max-aronov/issues"
     },
-    "homepage": "https://github.com/MaxAronov/Quiz-Game-Repo#readme"
+    "homepage": "https://github.com/staten-island-tech/quiz-game-max-aronov#readme",
+    "description": ""
 }
