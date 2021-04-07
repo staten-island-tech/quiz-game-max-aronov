@@ -12,23 +12,26 @@
 }
 
 .button-container {
-    display: flex;
-    justify-content: center;
     width: 100%;
     height: 100%;
+}
+
+.button-linker {
+    text-decoration: none;
 }
 
 .button {
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 15vw;
+    width: 100%;
     height: 7.5vh;
     border-radius: 2rem;
     border-top: 0.25rem outset $tertiary;
     border-left: 0.25rem outset $tertiary;
     border-bottom: 0.25rem inset #363e44;
     border-right: 0.25rem inset #363e44;
+    outline: none;
     background: linear-gradient(to right, #29303b 50%, $primary 50%);
     background-size: 200% 100%;
     background-position: right bottom;

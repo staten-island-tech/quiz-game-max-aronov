@@ -7,7 +7,7 @@
   -ms-grid-rows: 2fr, 1fr;
       grid-template-rows: 2fr, 1fr;
   margin-top: 5vh;
-  margin-left: 27.75vw;
+  left: 27.75vw;
   width: auto;
   height: auto;
 }
@@ -60,14 +60,12 @@
 }
 
 .button-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
   height: 100%;
+}
+
+.button-linker {
+  text-decoration: none;
 }
 
 .button {
@@ -78,13 +76,14 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  width: 15vw;
+  width: 100%;
   height: 7.5vh;
   border-radius: 2rem;
   border-top: 0.25rem outset #455561;
   border-left: 0.25rem outset #455561;
   border-bottom: 0.25rem inset #363e44;
   border-right: 0.25rem inset #363e44;
+  outline: none;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #29303b), color-stop(50%, #343d4b));
   background: linear-gradient(to right, #29303b 50%, #343d4b 50%);
   background-size: 200% 100%;
