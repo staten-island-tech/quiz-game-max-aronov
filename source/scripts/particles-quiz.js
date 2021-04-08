@@ -55,7 +55,7 @@ particlesJS('particles-js', {
         "move": {
             "enable": true,
             "speed": 15,
-            "direction": "right",
+            "direction": "bottom",
             "random": true,
             "straight": true,
             "out_mode": "out",
@@ -75,8 +75,8 @@ particlesJS('particles-js', {
                 "mode": "repulse"
             },
             "onclick": {
-                "enable": true,
-                "mode": "repulse"
+                "enable": false,
+                "mode": "push"
             },
             "resize": true
         },

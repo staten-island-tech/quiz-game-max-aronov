@@ -4,6 +4,7 @@
         "sass": "^1.32.8"
     },
     "dependencies": {
+        "@justinribeiro/code-block": "^0.2.0",
         "particles.js": "^2.0.0"
     },
     "name": "quiz-game-max-aronov",
