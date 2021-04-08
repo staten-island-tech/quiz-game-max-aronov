@@ -1,34 +1,72 @@
 const questionsCache = [{
         question: "How many planets are there in the Solar System",
-        choices: ["9", "10", "8", "6"],
+        choices: [{
+            content: "9",
+            number: 1
+        }, {
+            content: "10",
+            number: 2
+        }, {
+            content: "8",
+            number: 3
+        }, {
+            content: "6",
+            number: 4
+        }],
         correct: 3,
         difficulty: "effortless"
     },
     {
         question: "What galaxy is the Solar System a part of",
-        choices: ["Milky Way", "Andromeda", "Whirpool", "Cigar"],
+        choices: [{
+            content: "Milky Way",
+            number: 1
+        }, {
+            content: "Andromeda",
+            number: 2
+        }, {
+            content: "Whirpool",
+            number: 3
+        }, {
+            content: "Cigar",
+            number: 4
+        }],
         correct: 1,
         difficulty: "effortless"
     },
     {
         question: "How old is the universe",
-        choices: [
-            "14.2 billion years",
-            "10.9 billion years",
-            "13.8 billion years",
-            "18.8 billion years"
-        ],
+        choices: [{
+            content: "14.2 billion years",
+            number: 1
+        }, {
+            content: "10.9 billion years",
+            number: 2
+        }, {
+            content: "13.8 billion years",
+            number: 3
+        }, {
+            content: "18.8 billion years",
+            number: 4
+        }],
         correct: 3,
         difficulty: "effortless"
     },
     {
         question: "What is a supernova",
-        choices: [
-            "An imploded planet",
-            "A dead star's explosion",
-            "A splitting galaxy",
-            "Another name for a gamma ray burst"
-        ],
+        choices: [{
+            content: "An imploded planet",
+            number: 1
+        }, {
+            content: "A dead star's explosion",
+            number: 2
+        }, {
+            content: "A splitting galaxy",
+            number: 3
+        }, {
+            content: "Another name for a gamma ray burst",
+            number: 4
+        }],
         correct: 2,
         difficulty: "easy"
     },
