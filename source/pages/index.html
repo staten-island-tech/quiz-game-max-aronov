@@ -16,7 +16,7 @@
     <div id="particles-js">
         <header id="page-header">
             <div id="title-text-container">
-                <h1 id="title-text" onclick="location.href='./index.html'">
+                <h1 id="title-text" onclick="window.location.reload()">
                     Cosmic Trivia
                 </h1>
             </div>
@@ -26,9 +26,9 @@
         </header>
         <section id="navigation">
             <div class="button-container">
-                <a href="" class="button-linker">
+                <a href="#particles-js-quiz" class="button-linker">
                     <button class="button" id="quiz-button">
-              <h2 class="button-text">Quiz</h2>
+              <h2 class="button-text">Start Quiz</h2>
             </button></a>
             </div>
             <a href="https://github.com/staten-island-tech/quiz-game-max-aronov" target="_blank" class="button-linker">
@@ -37,9 +37,15 @@
           </button></a>
         </section>
     </div>
+    <div id="particles-js-quiz">
+        <section id="quiz"></section>
+    </div>
 
     <script src="../../node_modules/particles.js/particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
     <script src="../scripts/particles.js"></script>
+    <script src="../scripts/index.js"></script>
 </body>
 
 </html>

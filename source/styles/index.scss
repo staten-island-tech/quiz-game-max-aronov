@@ -1,6 +1,7 @@
 @import "_variables.scss";
 @import "_header.scss";
 @import "_navigation.scss";
+@import "_quiz.scss";
 html,
 body {
     margin: 0;
@@ -10,7 +11,7 @@ body {
 
 body {
     background-color: #000000;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -21,4 +22,11 @@ body::-webkit-scrollbar {
     position: absolute;
     width: 100%;
     height: 100%;
+}
+
+#particles-js-quiz {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100vh;
 }

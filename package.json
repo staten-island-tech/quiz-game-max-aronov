@@ -5,6 +5,7 @@
     },
     "dependencies": {
         "@justinribeiro/code-block": "^0.2.0",
+        "canvas-confetti": "^1.4.0",
         "particles.js": "^2.0.0"
     },
     "name": "quiz-game-max-aronov",
