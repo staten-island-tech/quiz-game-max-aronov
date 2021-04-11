@@ -12,13 +12,11 @@
     <title>Cosmic Trivia</title>
 </head>
 
-<body oncontextmenu="return false;">
+<body>
     <div id="particles-js">
         <header id="page-header">
             <div id="title-text-container">
-                <h1 id="title-text" onclick="window.location.reload()">
-                    Cosmic Trivia
-                </h1>
+                <h1 id="title-text">Cosmic Trivia</h1>
             </div>
             <div id="subtitle-text-container">
                 <h2 id="subtitle-text">How much do you know about the universe?</h2>
@@ -28,7 +26,7 @@
             <div class="button-container">
                 <a href="#particles-js-quiz" class="button-linker">
                     <button class="button" id="quiz-button">
-              <h2 class="button-text">Start Quiz</h2>
+              <h2 class="button-text" id="quiz-button-text">Start Quiz</h2>
             </button></a>
             </div>
             <a href="https://github.com/staten-island-tech/quiz-game-max-aronov" target="_blank" class="button-linker">
@@ -38,6 +36,9 @@
         </section>
     </div>
     <div id="particles-js-quiz">
+        <button id="exit-quiz-button">
+        <h1 id="exit-quiz-button-text">Exit</h1>
+      </button>
         <section id="quiz">
             <div id="question-container">
                 <div id="question-text-container">
@@ -48,22 +49,22 @@
                 <div id="answer-buttons">
                     <div class="answer-button-container">
                         <button class="answer-button" id="answer-button-1">
-                <h2 id="answer-button-text-1"></h2>
+                <h2 class="answer-button-text" id="answer-button-text-1"></h2>
               </button>
                     </div>
                     <div class="answer-button-container">
                         <button class="answer-button" id="answer-button-2">
-                <h2 id="answer-button-text-2"></h2>
+                <h2 class="answer-button-text" id="answer-button-text-2"></h2>
               </button>
                     </div>
                     <div class="answer-button-container">
                         <button class="answer-button" id="answer-button-3">
-                <h2 id="answer-button-text-3"></h2>
+                <h2 class="answer-button-text" id="answer-button-text-3"></h2>
               </button>
                     </div>
                     <div class="answer-button-container">
                         <button class="answer-button" id="answer-button-4">
-                <h2 id="answer-button-text-4"></h2>
+                <h2 class="answer-button-text" id="answer-button-text-4"></h2>
               </button>
                     </div>
                 </div>

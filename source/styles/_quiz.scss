@@ -1,3 +1,38 @@
+#exit-quiz-button {
+    position: absolute;
+    left: 45%;
+    top: 4.25%;
+    width: 10%;
+    height: 7.5%;
+    background: $primary;
+    border-radius: 1rem;
+    border-top: 0.25rem outset $tertiary;
+    border-left: 0.25rem outset $tertiary;
+    border-bottom: 0.25rem inset #363e44;
+    border-right: 0.25rem inset #363e44;
+    outline: none;
+    background: linear-gradient(to right, #29303b 50%, $primary 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    transform: scale(1);
+    animation: button-pulse 2s infinite;
+}
+
+#exit-quiz-button:hover {
+    cursor: pointer;
+    background-position: left bottom;
+}
+
+#exit-quiz-button-text {
+    margin: auto;
+    margin-left: 1%;
+    margin-top: 0.5%;
+    font-family: $text-font;
+    color: $text-color;
+    font-size: 2rem;
+}
+
 #quiz {
     position: absolute;
     display: grid;
@@ -31,6 +66,7 @@
     font-family: $text-font;
     color: $text-color;
     font-size: 2rem;
+    text-align: center;
 }
 
 #answer-buttons {
@@ -73,4 +109,15 @@
 
 .answer-button:hover {
     background-color: $tertiary;
+    cursor: pointer;
+}
+
+.answer-button-text {
+    margin: auto;
+    margin-left: 1%;
+    margin-top: 0.5%;
+    font-family: $text-font;
+    color: $text-color;
+    font-size: 2rem;
+    text-align: center;
 }

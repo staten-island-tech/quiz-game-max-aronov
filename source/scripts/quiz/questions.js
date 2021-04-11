@@ -171,3 +171,5 @@ const questionsCache = [{
 
     console.log("\nCorrect answer:\n" + question.correct + ") " + question.choices[question.correct])
 }); */
+
+export { questionsCache };

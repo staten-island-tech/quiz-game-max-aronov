@@ -259,3 +259,5 @@ function confettiGen() {
         startVelocity: 45,
     });
 }
+
+export { confettiGen }

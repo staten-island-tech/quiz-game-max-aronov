@@ -27,7 +27,6 @@
   letter-spacing: 0.5rem;
   text-transform: uppercase;
   text-shadow: -0.25rem -0.25rem 0 #343d4b, 0.25rem -0.25rem 0 #343d4b, -0.25rem 0.25rem 0 #343d4b, 0.25rem 0.25rem 0 #343d4b;
-  cursor: pointer;
 }
 
 #subtitle-text-container {
@@ -136,6 +135,45 @@
   text-decoration: none;
 }
 
+#exit-quiz-button {
+  position: absolute;
+  left: 45%;
+  top: 4.25%;
+  width: 10%;
+  height: 7.5%;
+  background: #343d4b;
+  border-radius: 1rem;
+  border-top: 0.25rem outset #455561;
+  border-left: 0.25rem outset #455561;
+  border-bottom: 0.25rem inset #363e44;
+  border-right: 0.25rem inset #363e44;
+  outline: none;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #29303b), color-stop(50%, #343d4b));
+  background: linear-gradient(to right, #29303b 50%, #343d4b 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: button-pulse 2s infinite;
+          animation: button-pulse 2s infinite;
+}
+
+#exit-quiz-button:hover {
+  cursor: pointer;
+  background-position: left bottom;
+}
+
+#exit-quiz-button-text {
+  margin: auto;
+  margin-left: 1%;
+  margin-top: 0.5%;
+  font-family: Ubuntu, sans-serif;
+  color: #9db1c0;
+  font-size: 2rem;
+}
+
 #quiz {
   position: absolute;
   display: -ms-grid;
@@ -172,6 +210,7 @@
   font-family: Ubuntu, sans-serif;
   color: #9db1c0;
   font-size: 2rem;
+  text-align: center;
 }
 
 #answer-buttons {
@@ -222,6 +261,17 @@
 
 .answer-button:hover {
   background-color: #455561;
+  cursor: pointer;
+}
+
+.answer-button-text {
+  margin: auto;
+  margin-left: 1%;
+  margin-top: 0.5%;
+  font-family: Ubuntu, sans-serif;
+  color: #9db1c0;
+  font-size: 2rem;
+  text-align: center;
 }
 
 html,
