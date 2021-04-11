@@ -1,7 +1,76 @@
 #quiz {
     position: absolute;
-    left: 5%;
-    top: 5%;
-    width: 90vw;
-    height: 90vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 2fr;
+    left: 12.5%;
+    top: 12.5%;
+    width: 75%;
+    height: 75%;
+}
+
+#question-text-container {
+    position: absolute;
+    left: 2.5%;
+    top: 4.25%;
+    width: 95%;
+    height: 25%;
+    background: $primary;
+    border-radius: 1rem;
+    border-top: 0.25rem outset $tertiary;
+    border-left: 0.25rem outset $tertiary;
+    border-bottom: 0.25rem inset #363e44;
+    border-right: 0.25rem inset #363e44;
+    outline: none;
+}
+
+#question-text {
+    margin: auto;
+    margin-left: 1%;
+    margin-top: 0.5%;
+    font-family: $text-font;
+    color: $text-color;
+    font-size: 2rem;
+}
+
+#answer-buttons {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    left: 2.5%;
+    bottom: 4.25%;
+    width: 95%;
+    height: 58%;
+    background: $primary;
+    border-radius: 1rem;
+    border-top: 0.25rem outset $tertiary;
+    border-left: 0.25rem outset $tertiary;
+    border-bottom: 0.25rem inset #363e44;
+    border-right: 0.25rem inset #363e44;
+    outline: none;
+}
+
+.answer-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.answer-button {
+    position: relative;
+    top: 15%;
+    width: 97%;
+    height: 75%;
+    background: $secondary;
+    border-radius: 2rem;
+    border-top: 0.5vh outset $tertiary;
+    border-left: 0.25vw outset $tertiary;
+    border-bottom: 0.5vh inset #363e44;
+    border-right: 0.25vw inset #363e44;
+    outline: none;
+    transition: 0.4s;
+}
+
+.answer-button:hover {
+    background-color: $tertiary;
 }

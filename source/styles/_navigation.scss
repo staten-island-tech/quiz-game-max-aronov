@@ -11,11 +11,6 @@
     height: auto;
 }
 
-.button-container {
-    width: 100%;
-    height: 100%;
-}
-
 .button-linker {
     text-decoration: none;
 }
@@ -27,10 +22,10 @@
     width: 100%;
     height: 7.5vh;
     border-radius: 2rem;
-    border-top: 0.25rem outset $tertiary;
-    border-left: 0.25rem outset $tertiary;
-    border-bottom: 0.25rem inset #363e44;
-    border-right: 0.25rem inset #363e44;
+    border-top: 0.5vh outset $tertiary;
+    border-left: 0.25vw outset $tertiary;
+    border-bottom: 0.5vh inset #363e44;
+    border-right: 0.25vw inset #363e44;
     outline: none;
     background: linear-gradient(to right, #29303b 50%, $primary 50%);
     background-size: 200% 100%;

@@ -12,7 +12,7 @@
     <title>Cosmic Trivia</title>
 </head>
 
-<body>
+<body oncontextmenu="return false;">
     <div id="particles-js">
         <header id="page-header">
             <div id="title-text-container">
@@ -38,7 +38,37 @@
         </section>
     </div>
     <div id="particles-js-quiz">
-        <section id="quiz"></section>
+        <section id="quiz">
+            <div id="question-container">
+                <div id="question-text-container">
+                    <h1 id="question-text"></h1>
+                </div>
+            </div>
+            <div id="answer-container">
+                <div id="answer-buttons">
+                    <div class="answer-button-container">
+                        <button class="answer-button" id="answer-button-1">
+                <h2 id="answer-button-text-1"></h2>
+              </button>
+                    </div>
+                    <div class="answer-button-container">
+                        <button class="answer-button" id="answer-button-2">
+                <h2 id="answer-button-text-2"></h2>
+              </button>
+                    </div>
+                    <div class="answer-button-container">
+                        <button class="answer-button" id="answer-button-3">
+                <h2 id="answer-button-text-3"></h2>
+              </button>
+                    </div>
+                    <div class="answer-button-container">
+                        <button class="answer-button" id="answer-button-4">
+                <h2 id="answer-button-text-4"></h2>
+              </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <script src="../../node_modules/particles.js/particles.js"></script>
