@@ -9,7 +9,9 @@ let score = 0;
 const lastQuestion = questionsCache.length - 1;
 
 const buttonStartQuiz = DOMSelectors.buttonStartQuiz;
+const buttonResumeQuiz = DOMSelectors.buttonResumeQuiz;
 const buttonExitQuiz = DOMSelectors.buttonExitQuiz;
+const buttonExitResults = DOMSelectors.buttonExitResults;
 
 const questionText = DOMSelectors.questionText;
 
@@ -78,14 +80,13 @@ function checkAnswer() {
         confettiGen();
         score += questionsCache[currentQuestion].score;
         currentQuestion++;
-    } else {
-
-    }
+    } else {}
 
     if (currentQuestion <= lastQuestion) {
         questionInsert();
     } else {
         confettiGen();
+        document.getElementById("results-panel").scrollIntoView();
     }
 
     updateInfo();
@@ -114,5 +115,11 @@ function updateInfo() {
 // Exit quiz
 buttonExitQuiz.addEventListener("click", function() {
     history.back();
-    buttonStartQuiz.querySelector(".button-text").textContent = "Resume Quiz";
+    buttonResumeQuiz.style.display = "block"
+    buttonStartQuiz.style.display = "none";
+});
+
+// Exit results
+buttonExitResults.addEventListener("click", function() {
+    document.getElementById("particles-js").scrollIntoView();
 });

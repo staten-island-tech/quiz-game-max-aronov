@@ -16,10 +16,11 @@
 }
 
 .button {
+    position: absolute;
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 100%;
+    width: 46%;
     height: 7.5vh;
     border-radius: 2rem;
     border-top: 0.5vh outset $tertiary;
@@ -59,4 +60,11 @@
     color: $text-color;
     font-size: 2rem;
     text-decoration: none;
+}
+
+#resume-quiz-button {
+    position: absolute;
+    width: 46%;
+    height: 7.5vh;
+    display: none;
 }

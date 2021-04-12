@@ -64,6 +64,7 @@
 }
 
 .button {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,7 +72,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  width: 100%;
+  width: 46%;
   height: 7.5vh;
   border-radius: 2rem;
   border-top: 0.5vh outset #455561;
@@ -135,7 +136,14 @@
   text-decoration: none;
 }
 
-#exit-quiz-button {
+#resume-quiz-button {
+  position: absolute;
+  width: 46%;
+  height: 7.5vh;
+  display: none;
+}
+
+.exit-quiz-button {
   position: absolute;
   left: 45%;
   top: 4.25%;
@@ -160,12 +168,12 @@
           animation: button-pulse 2s infinite;
 }
 
-#exit-quiz-button:hover {
+.exit-quiz-button:hover {
   cursor: pointer;
   background-position: left bottom;
 }
 
-#exit-quiz-button-text {
+.exit-quiz-button-text {
   margin: auto;
   margin-left: 1%;
   margin-top: 0.5%;

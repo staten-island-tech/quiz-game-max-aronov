@@ -1,6 +1,8 @@
 const DOMSelectors = {
     buttonStartQuiz: document.getElementById("quiz-button"),
+    buttonResumeQuiz: document.getElementById("resume-quiz-button"),
     buttonExitQuiz: document.getElementById("exit-quiz-button"),
+    buttonExitResults: document.getElementById("exit-results-button"),
 
     questionText: document.getElementById("question-text"),
 

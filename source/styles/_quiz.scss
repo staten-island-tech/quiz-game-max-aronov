@@ -1,4 +1,4 @@
-#exit-quiz-button {
+.exit-button {
     position: absolute;
     left: 45%;
     top: 4.25%;
@@ -19,12 +19,12 @@
     animation: button-pulse 2s infinite;
 }
 
-#exit-quiz-button:hover {
+.exit-button:hover {
     cursor: pointer;
     background-position: left bottom;
 }
 
-#exit-quiz-button-text {
+.exit-button-text {
     margin: auto;
     margin-left: 1%;
     margin-top: 0.5%;
