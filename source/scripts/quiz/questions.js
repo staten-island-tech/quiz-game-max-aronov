@@ -7,7 +7,8 @@ const questionsCache = [{
             4: "6"
         },
         correct: 3,
-        difficulty: "effortless"
+        difficulty: "effortless",
+        score: 1
     },
     {
         question: "What galaxy is the Solar System a part of",
@@ -18,7 +19,8 @@ const questionsCache = [{
             4: "Cigar"
         },
         correct: 1,
-        difficulty: "effortless"
+        difficulty: "effortless",
+        score: 1
     },
     {
         question: "How old is the universe",
@@ -29,7 +31,8 @@ const questionsCache = [{
             4: "18.8 billion years"
         },
         correct: 3,
-        difficulty: "effortless"
+        difficulty: "effortless",
+        score: 1
     },
     {
         question: "What is a supernova",
@@ -40,7 +43,8 @@ const questionsCache = [{
             4: "Another name for a gamma ray burst"
         },
         correct: 2,
-        difficulty: "easy"
+        difficulty: "easy",
+        score: 2
     },
     {
         question: "What is a black hole",
@@ -51,7 +55,8 @@ const questionsCache = [{
             4: "An imploding galaxy"
         },
         correct: 1,
-        difficulty: "easy"
+        difficulty: "easy",
+        score: 2
     },
     {
         question: "How is a black hole created",
@@ -62,7 +67,8 @@ const questionsCache = [{
             4: "A galaxy collides with another galaxy"
         },
         correct: 1,
-        difficulty: "easy"
+        difficulty: "easy",
+        score: 2
     },
     {
         question: "What type of galaxy is the Milky Way",
@@ -73,7 +79,8 @@ const questionsCache = [{
             4: "Lenticular"
         },
         correct: 3,
-        difficulty: "medium"
+        difficulty: "medium",
+        score: 3
     },
     {
         question: "What lies in the center of most galaxies",
@@ -84,7 +91,8 @@ const questionsCache = [{
             4: "A black hole"
         },
         correct: 4,
-        difficulty: "medium"
+        difficulty: "medium",
+        score: 3
     },
     {
         question: "What star is predicted to go supernova sometime in the next 100,000 years",
@@ -95,7 +103,8 @@ const questionsCache = [{
             4: "Betelgeuse"
         },
         correct: 4,
-        difficulty: "medium"
+        difficulty: "medium",
+        score: 3
     },
     {
         question: "How much of the universe is composed of plasma",
@@ -106,7 +115,8 @@ const questionsCache = [{
             4: "99.9%"
         },
         correct: 4,
-        difficulty: "hard"
+        difficulty: "hard",
+        score: 4
     },
     {
         question: "How many comets are in the Solar System",
@@ -117,7 +127,8 @@ const questionsCache = [{
             4: "1 trillion"
         },
         correct: 4,
-        difficulty: "hard"
+        difficulty: "hard",
+        score: 4
     },
     {
         question: "What is the name of the remnant radiation of the early universe",
@@ -128,7 +139,8 @@ const questionsCache = [{
             4: "Gamma Wave Recombination"
         },
         correct: 1,
-        difficulty: "hard"
+        difficulty: "hard",
+        score: 4
     },
     {
         question: "How massive is the black hole TON 618 (in M☉)",
@@ -139,7 +151,8 @@ const questionsCache = [{
             4: "6.6×10¹⁰"
         },
         correct: 4,
-        difficulty: "insane"
+        difficulty: "insane",
+        score: 5
     },
     {
         question: "During which period of time during the birth of the universe were subatomic particles unable to form",
@@ -150,7 +163,8 @@ const questionsCache = [{
             4: "Inflationary Epoch"
         },
         correct: 1,
-        difficulty: "insane"
+        difficulty: "insane",
+        score: 5
     },
     {
         question: "How long did the Planck Epoch last (in seconds)",
@@ -161,7 +175,8 @@ const questionsCache = [{
             4: "10⁻⁶⁵"
         },
         correct: 2,
-        difficulty: "insane"
+        difficulty: "insane",
+        score: 5
     }
 ];
 

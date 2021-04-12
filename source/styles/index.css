@@ -178,14 +178,22 @@
   position: absolute;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
+  -ms-grid-columns: 71% 29%;
+      grid-template-columns: 71% 29%;
   -ms-grid-rows: 1fr 2fr;
       grid-template-rows: 1fr 2fr;
+      grid-template-areas: "q q" "a i";
   left: 12.5%;
   top: 12.5%;
   width: 75%;
   height: 75%;
+}
+
+#question-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: q;
 }
 
 #question-text-container {
@@ -213,6 +221,12 @@
   text-align: center;
 }
 
+#answer-container {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: a;
+}
+
 #answer-buttons {
   position: absolute;
   display: -ms-grid;
@@ -223,7 +237,7 @@
       grid-template-rows: repeat(4, 1fr);
   left: 2.5%;
   bottom: 4.25%;
-  width: 95%;
+  width: 65%;
   height: 58%;
   background: #343d4b;
   border-radius: 1rem;
@@ -274,6 +288,53 @@
   text-align: center;
 }
 
+#info {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: i;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  position: absolute;
+  top: 4%;
+  width: 91.5%;
+  height: 87%;
+  background: #343d4b;
+  border-radius: 1rem;
+  border-top: 0.25rem outset #455561;
+  border-left: 0.25rem outset #455561;
+  border-bottom: 0.25rem inset #363e44;
+  border-right: 0.25rem inset #363e44;
+  outline: none;
+}
+
+.info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info-text-container {
+  width: auto;
+  height: auto;
+}
+
+.info-text {
+  margin: auto;
+  margin: 15%;
+  font-family: Ubuntu, sans-serif;
+  color: #9db1c0;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
 html,
 body {
   margin: 0;
@@ -296,7 +357,7 @@ body::-webkit-scrollbar {
   height: 100%;
 }
 
-#particles-js-quiz {
+#quiz-panel {
   position: absolute;
   width: 100%;
   height: 100%;

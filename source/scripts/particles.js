@@ -109,7 +109,7 @@ particlesJS('particles-js', {
     "retina_detect": true
 })
 
-particlesJS('particles-js-quiz', {
+particlesJS('quiz-panel', {
     "particles": {
         "number": {
             "value": 600,

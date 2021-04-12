@@ -36,12 +36,17 @@
 #quiz {
     position: absolute;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 71% 29%;
     grid-template-rows: 1fr 2fr;
+    grid-template-areas: "q q""a i";
     left: 12.5%;
     top: 12.5%;
     width: 75%;
     height: 75%;
+}
+
+#question-container {
+    grid-area: q;
 }
 
 #question-text-container {
@@ -69,6 +74,10 @@
     text-align: center;
 }
 
+#answer-container {
+    grid-area: a;
+}
+
 #answer-buttons {
     position: absolute;
     display: grid;
@@ -76,7 +85,7 @@
     grid-template-rows: repeat(4, 1fr);
     left: 2.5%;
     bottom: 4.25%;
-    width: 95%;
+    width: 65%;
     height: 58%;
     background: $primary;
     border-radius: 1rem;
@@ -120,4 +129,42 @@
     color: $text-color;
     font-size: 2rem;
     text-align: center;
+}
+
+#info {
+    grid-area: i;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    position: absolute;
+    top: 4%;
+    width: 91.5%;
+    height: 87%;
+    background: $primary;
+    border-radius: 1rem;
+    border-top: 0.25rem outset $tertiary;
+    border-left: 0.25rem outset $tertiary;
+    border-bottom: 0.25rem inset #363e44;
+    border-right: 0.25rem inset #363e44;
+    outline: none;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+}
+
+.info-text-container {
+    width: auto;
+    height: auto;
+}
+
+.info-text {
+    margin: auto;
+    margin: 15%;
+    font-family: $text-font;
+    color: $text-color;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
 }
